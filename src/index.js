@@ -33,8 +33,7 @@ class App extends React.Component{
     else if (!this.state.errorMessage && this.state.lat) {
       return (
         <div>
-          <h1>Latitude: { this.state.lat }</h1>
-          <h1>longitude: { this.state.long }</h1>
+          <SeasonDisplay lat={ this.state.lat } long={ this.state.long } />
         </div>
       );
     }
