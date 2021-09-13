@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom'
 import SeasonDisplay from './SeasonDisplay';
+import Loading from './Loading';
 
 import './app.css'
 
@@ -27,13 +28,20 @@ class App extends React.Component{
   }
 
   render() {
-    return(
-      <div className="container">
-        <h1>Latitude: { this.state.lat}, { this.state.long }</h1>
-        <div>Error: { this.state.errorMessage }</div>
-        <SeasonDisplay></SeasonDisplay>
-      </div>
-    )
+    if (this.state.errorMessage && !this.state.lat) {
+      return <h1>Error: { this.state.errorMessage }</h1>
+    }
+
+    else if (!this.state.errorMessage && this.state.lat) {
+      return (
+        <div>
+          <h1>Latitude: { this.state.lat }</h1>
+          <h1>longitude: { this.state.long }</h1>
+        </div>
+      );
+    }
+
+    return <Loading />
   }
 }
 
