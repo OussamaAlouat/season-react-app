@@ -2,9 +2,9 @@ import React from 'react';
 
 const Loading = () => {
   return (
-    <div class="ui segment loading-container">
-      <div class="ui active dimmer">
-        <div class="ui text loader">Loading</div>
+    <div className="ui segment loading-container">
+      <div className="ui active dimmer">
+        <div className="ui text loader">Loading</div>
       </div>
       <p></p>
     </div>
