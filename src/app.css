@@ -29,3 +29,11 @@
   display: flex;
   border-radius: 12px;
 }
+
+.season-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
