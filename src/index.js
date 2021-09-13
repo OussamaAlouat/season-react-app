@@ -11,12 +11,13 @@ class App extends React.Component{
 
     this.state = {
       lat: null,
+      long: null
 
     };
 
     window.navigator.geolocation.getCurrentPosition(
       (position) =>{
-        this.setState({ lat: position.coords.latitude })
+        this.setState({ lat: position.coords.latitude, long: position.coords.longitude })
       },
       (err) => console.log(err)
     );
@@ -25,7 +26,7 @@ class App extends React.Component{
   render() {
     return(
       <div className="container">
-        <h1>Latitude: { this.state.lat } </h1>
+        <h1>Latitude: { this.state.lat}, { this.state.long } </h1>
         <SeasonDisplay></SeasonDisplay>
       </div>
     )
