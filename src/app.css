@@ -11,3 +11,21 @@
 .loading-container {
   height: 100%;
 }
+
+.error-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dcdcdc;
+}
+
+.error-block {
+  width: 80%;
+  background: #8c8c8c;
+  min-height: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 12px;
+}
