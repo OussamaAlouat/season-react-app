@@ -13,18 +13,18 @@ class App extends React.Component{
       lat: null,
 
     };
-  }
 
-  render() {
     window.navigator.geolocation.getCurrentPosition(
       (position) =>{
         this.setState({ lat: position.coords.latitude })
       },
       (err) => console.log(err)
     );
+  }
 
+  render() {
     return(
-      <div>
+      <div className="container">
         <h1>Latitude: { this.state.lat } </h1>
         <SeasonDisplay></SeasonDisplay>
       </div>
