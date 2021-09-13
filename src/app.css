@@ -37,3 +37,25 @@
   align-content: center;
   height: 100%;
 }
+
+i {
+  font-size: 100px !important;
+  position: absolute;
+}
+.icon-top {
+  top: 100px;
+  left: 100px;
+}
+
+.icon-bottom {
+  bottom: 50px;
+  right: 100px;
+}
+
+.sun {
+  color: orange;
+}
+
+.snowflake {
+  color: snow;
+}
