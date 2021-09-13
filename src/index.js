@@ -11,7 +11,8 @@ class App extends React.Component{
 
     this.state = {
       lat: null,
-      long: null
+      long: null,
+      errorMessage: ''
 
     };
 
@@ -19,14 +20,17 @@ class App extends React.Component{
       (position) =>{
         this.setState({ lat: position.coords.latitude, long: position.coords.longitude })
       },
-      (err) => console.log(err)
+      (err) => {
+        this.setState({ errorMessage: err.message })
+      }
     );
   }
 
   render() {
     return(
       <div className="container">
-        <h1>Latitude: { this.state.lat}, { this.state.long } </h1>
+        <h1>Latitude: { this.state.lat}, { this.state.long }</h1>
+        <div>Error: { this.state.errorMessage }</div>
         <SeasonDisplay></SeasonDisplay>
       </div>
     )
