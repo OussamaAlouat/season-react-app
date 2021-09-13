@@ -39,7 +39,6 @@
 }
 
 i {
-  font-size: 100px !important;
   position: absolute;
 }
 .icon-top {
@@ -48,14 +47,22 @@ i {
 }
 
 .icon-bottom {
-  bottom: 50px;
+  bottom: 100px;
   right: 100px;
 }
 
 .sun {
-  color: orange;
+  color: red;
 }
 
 .snowflake {
   color: snow;
+}
+
+.winter {
+  background-color: aliceblue;
+}
+
+.summer {
+  background-color: orange;
 }
