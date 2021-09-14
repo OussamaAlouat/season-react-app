@@ -40,6 +40,7 @@
 
 i {
   position: absolute;
+  animation: rote 2s infinite;
 }
 .icon-top {
   top: 100px;
@@ -65,4 +66,67 @@ i {
 
 .summer {
   background-color: orange;
+}
+
+@keyframes rote {
+  0% {
+    transform: rotate(5deg);
+  }
+  5% {
+    transform: rotate(10deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  15% {
+    transform: rotate(40deg);
+  }
+  20% {
+    transform: rotate(60deg);
+  }
+  25% {
+    transform: rotate(80deg);
+  }
+  35% {
+    transform: rotate(100deg);
+  }
+  40% {
+    transform: rotate(120deg);
+  }
+  45% {
+    transform: rotate(140deg);
+  }
+  50% {
+    transform: rotate(160deg);
+  }
+  55% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(200deg);
+  }
+  65% {
+    transform: rotate(220deg);
+  }
+  70% {
+    transform: rotate(240deg);
+  }
+  75% {
+    transform: rotate(260deg);
+  }
+  80% {
+    transform: rotate(280deg);
+  }
+  85% {
+    transform: rotate(300deg);
+  }
+  90% {
+    transform: rotate(320deg);
+  }
+  95% {
+    transform: rotate(340deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
